@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f3f3;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    padding: 30px 0;
+    color: white;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Contact Section Styles */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.instagram-link, .email-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.instagram-link {
+    background: linear-gradient(45deg, #f09433, #dc2743, #cc2366);
+    color: white;
+}
+
+.email-link {
+    background: #4285F4;
+    color: white;
+}
+
+.instagram-link:hover, .email-link:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+    .project img {
+        width: 150px;
+        height: 150px;
+    }
+}
